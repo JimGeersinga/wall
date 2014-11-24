@@ -1,0 +1,19 @@
+main#admin_wall{
+	position: relative;
+	padding-left: 220px;
+	padding-top: 51px;
+	width: 100%;
+	overflow: hidden;
+	padding-bottom: 10px;
+	background-color: white;
+}
+main#admin_wall img{
+	height: 35px;
+
+	text-align: center;
+}
+main#admin_wall button{
+	color: white;
+	text-align: center;
+	width: 100px;
+}

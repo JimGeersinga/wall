@@ -1,0 +1,25 @@
+@media only screen and (max-width: 950px){
+	aside#primary_sidebar{
+		width: 50px;
+	}
+	main#main_wall{
+		margin-left: 60px;
+	}
+	div.asideTitle, div.asideProfile, div.asideFooter,span.title,.searchbar{
+		display: none;
+	}
+	nav.topNav{
+		left: 50px;
+	}
+	aside#primary_sidebar nav.asideMenu ul li i{
+		margin-left: 5px;
+	}
+}
+@media only screen and (max-width: 1165px){
+	div.side{
+		right: -450px !important;
+	}
+	nav.topNav div.opendiv{	
+		transform: rotate(0deg);
+	}
+}

@@ -1,0 +1,168 @@
+body {
+	background: rgba(183,222,237,1);
+	background: -moz-linear-gradient(top, rgba(183,222,237,1) 0%, rgba(183,222,237,1) 1%, rgba(113,206,239,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(183,222,237,1)), color-stop(1%, rgba(183,222,237,1)), color-stop(100%, rgba(113,206,239,1)));
+	background: -webkit-linear-gradient(top, rgba(183,222,237,1) 0%, rgba(183,222,237,1) 1%, rgba(113,206,239,1) 100%);
+	background: -o-linear-gradient(top, rgba(183,222,237,1) 0%, rgba(183,222,237,1) 1%, rgba(113,206,239,1) 100%);
+	background: -ms-linear-gradient(top, rgba(183,222,237,1) 0%, rgba(183,222,237,1) 1%, rgba(113,206,239,1) 100%);
+	background: linear-gradient(to bottom, rgba(183,222,237,1) 0%, rgba(183,222,237,1) 1%, rgba(113,206,239,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b7deed', endColorstr='#71ceef', GradientType=0 );
+ 	background-repeat: no-repeat;
+ 	position: relative;
+}
+html{
+	background-color: #71ceef;
+}
+.container{
+	max-width: 1200px;
+	margin-right: auto;
+	margin-left: auto;
+}
+nav.navbar ul{
+	float: right;
+}
+nav.navbar{
+	border-bottom: 1px solid black;
+}
+nav.navbar span{
+	color: gray;
+	position: absolute;
+	left: 20px;
+	top: 15px;
+	font-size: 30px;
+}
+nav.navbar, nav.navbar ul, nav.navbar ul li{
+	background-color: #222;
+}
+nav.navbar{
+	margin: 0;
+	width: 100%;
+}
+
+nav.navbar li a{
+	height: 50px;
+	color: gray;
+	line-height: 50px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+nav.navbar li a:hover{
+	height: 50px;
+	color: white;
+	text-decoration: none;
+}
+.menu_top{
+	border-bottom: 1px solid black;
+	background-color: #222;
+}
+#login{
+	margin-top: 50px;
+}
+div.login{
+	z-index: 0;
+}
+div.about{
+	background-color: white;
+	-webkit-box-shadow: 0px 0px 15px 2px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    0px 0px 15px 2px rgba(50, 50, 50, 0.75);
+	box-shadow:         0px 0px 15px 2px rgba(50, 50, 50, 0.75);
+	position: relative;
+	z-index: 9;
+}
+@media only screen and (max-width: 767px){
+	.navbar{
+		position: relative;
+	}
+	.navbar li {
+		margin-left: 0;
+		margin-right: 50px;
+		width: 100%;
+		float: left;
+		text-align: center;
+	}
+
+	.navbar ul{
+		margin-top: 50px;
+		width: 100%;
+		border-top: 1px solid black;
+	}
+}
+nav.navbar ul li.active{
+	background-color: black;
+}
+nav.navbar, nav.navbar ul, nav.navbar ul li.active a{
+	color: white;
+}
+.navbar li{
+	margin-right: 0px;
+}
+
+.loginframe{
+	width: 400px;
+	height: 400px;
+	margin-left: auto;
+	margin-right: auto;
+
+	position: relative;
+	top:20%;
+	
+}
+.centerlogin{
+	background-color: white;
+	border: 1px solid gray;
+	position: relative;
+	width: 400px;
+
+	border-radius: 10px;
+
+}
+.centerlogin form{
+		margin-left: auto;
+	margin-right: auto;
+	width: 300px;
+}
+@media only screen and (max-width: 767px){
+	.navbar ul li{
+		display: none;
+	}
+}
+span.gray{
+	color: gray;
+	font-size: 50px;
+}
+.centerlogin form input{
+	width: 100%;
+}
+.loginTitle{
+	width: 100%;
+	text-align: center;
+	color: gray;
+	background-color: #222;
+	border-bottom: 1px solid black;
+	border-top-left-radius: 8px;
+	border-top-right-radius:8px;
+	padding: 5px;
+}
+hr{
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.3), rgba(0,0,0,0)); 
+    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.3), rgba(0,0,0,0)); 
+    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.3), rgba(0,0,0,0)); 
+    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.3), rgba(0,0,0,0)); 
+    padding: 0px;
+    margin: 0;
+    margin-bottom: 5px;
+}
+.loginFooter {
+text-align: center;
+color: gray;
+	padding-bottom: 4px;
+}
+.loginBody button.btn{
+	width: 100%;
+}
+.loginBody{
+	color: gray;
+	padding-top: 5px;
+}

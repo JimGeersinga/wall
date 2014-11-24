@@ -1,0 +1,210 @@
+main#main_wall{
+	position: relative;
+	margin-left: 240px;
+	padding-top: 52px;
+	width: 40%;
+	float: left;
+	overflow: hidden;
+	padding-bottom: 10px;
+}
+main#main_wall div.wall{
+	width: 100%;
+	height: auto;
+	background: white;
+	border: 1px solid #BDBDBD;
+	position: relative;
+	top:10px;
+	border-radius: 3px;
+	margin-bottom: 10px;
+}
+main#main_wall div.wall div.wallTitle{
+	width: 95%;
+	padding-top: 10px;
+	margin: 0 auto;
+	border-bottom: 1px solid #BDBDBD;
+	height: 70px;
+}
+main#main_wall div.wall div.wallTitle div.wallProfile{
+	float: left;
+	position: relative;
+}
+main#main_wall div.wall div.wallTitle div.titlecontent{
+	vertical-align: center;
+}
+main#main_wall div.wall div.wallTitle div.title{
+	
+	width: 100%;
+	height: 100%;
+	line-height: 50px;
+	text-align:  center;
+}
+main#main_wall div.wall div.wallTitle div.wallTitleContent{
+	float: left;
+	position: relative;
+	margin-left: 10px;
+}
+main#main_wall div.wall div.wallTitle div.wallProfile img{
+	height: 50px;
+	width: 50px;
+	padding: 0px;
+}
+main#main_wall div.wall div.wallContent{
+	width: 95%;
+	word-wrap: break-word;
+	height: auto;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin: 0 auto;
+}
+main#main_wall div.wall div.wallContentBar{
+	width: 100%;
+	height: 25px;
+	margin: 0 auto;
+	color: gray;
+	background-color: #F2F2F2;
+	border-top: 1px solid #E0E0E0;
+	border-bottom: 1px solid #E0E0E0;
+}
+main#main_wall div.wall div.wallContentBar div.wallframe{
+	width: 95%;
+	margin: 0 auto;
+}
+main#main_wall div.wall div.wallFooter{
+	width: 100%;
+	background-color: #F8F8F8;
+	height: 100%;
+}
+main#main_wall div.newpost{
+	width: 100%;
+	height: auto;
+	background: white;
+	border: 1px solid #BDBDBD;
+	position: relative;
+	top:10px;
+	border-radius: 3px;
+	margin-bottom: 10px;
+}
+main#main_wall div.newpost div.newpostFooter{
+	width: 100%;
+	border-top: 1px solid #BDBDBD;
+	height: 35px;
+	background-color: #F2F2F2;
+}
+main#main_wall div.newpost div.textarea{
+	padding: 5px;
+}
+main#main_wall div.newpost div.newpostFooter button{
+	float: right;
+	margin-right: 10px;
+	height: 25px;
+	line-height: 5px;
+	margin-top: 5px;
+}
+main#main_wall div.wall div.wallFooter div.textarea textarea{
+	border: 1px solid #D2CFCF;
+}
+main#main_wall div.wall div.wallFooter div.textarea textarea:focus{
+	outline: none;
+	box-shadow: none;
+	border-color: none;
+}
+main#main_wall div.wall div.wallFooter div.textarea.comment{
+	width: 100%;
+}
+main#main_wall div.wall div.wallFooter div.textarea{
+	margin: 0px auto;
+	width:  95%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.hidden{
+	display: none;
+}
+main#main_wall div.wall div.wallFooter div.comments{
+	width: 95%;
+	margin: 0 auto;
+	font-size: 13px;
+	padding-top: 5px;
+	position: relative;
+}
+main#main_wall div.wall div.wallFooter div.comment{	
+	margin-bottom: 5px;
+	width: 100%;
+	position: relative;
+	min-height: 40px;
+}
+main#main_wall div.wall div.wallFooter div.comment div.comment_content{
+	padding-left: 40px;
+	word-wrap: break-word;
+}
+main#main_wall div.wall div.wallFooter div.comment_bar{
+	position: relative;
+	top: -4px;
+	color: #B0B0B0;
+	height: 20px;
+}
+
+main#main_wall div.wall ul{
+	margin: 0;
+	padding: 0px;
+	height: 20px;
+}
+main#main_wall div.wall ul li{
+	display: inline-block;
+	margin: 0;
+	padding:0;
+	position: relative;
+	width: auto;
+	margin-left: 5px;
+}
+main#main_wall div.wall div.wallTitle div.wallTitleContent a{
+	text-decoration: none;
+	color: DarkBlue;
+}
+main#main_wall div.wall div.wallTitle div.wallTitleContent a:hover{
+	text-decoration: underline;
+	color: DarkBlue;
+}
+main#main_wall div.wall div.wallFooter div.comment div.comment_content a{
+	text-decoration: none;
+	color: DarkBlue;
+}
+main#main_wall div.wall div.wallFooter div.comment div.comment_content a:hover{
+	text-decoration: underline;
+	color: DarkBlue;
+}
+main#main_wall div.wall div.wallFooter div.comment div.comment_img{
+	position: absolute;
+	top: 4px;
+}
+main#main_wall div.wall div.wallFooter div.comment div.comment_img img{
+	height: 35px;
+	width: 35px;
+	padding: 0px;
+}
+.reply{
+	float: right;
+	margin-right: 20px;
+}
+.replycomment{
+	display: none;
+}
+main#main_wall div.wall i.deletepost2{
+	font-size: 14px;
+}
+main#main_wall div.wall i.deletepost{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	color: gray;
+}
+main#main_wall div.wall i.editpost2{
+	font-size: 14px;
+}
+main#main_wall div.wall i.editpost{
+	position: absolute;
+	top: 12px;
+	right: 30px;
+	font-size: 13px;
+	color: gray;
+}

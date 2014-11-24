@@ -1,0 +1,74 @@
+*{
+	margin: 0;
+	padding: 0px;
+}
+html{
+	background-color: #D8D8D8;
+	overflow-y: scroll;
+}
+hr.br{
+	background: url(../img/delimeter.png) center 0 no-repeat;
+	background-size: 90% 100%;
+	border: none;
+	height: 2px;
+	margin: 10px -25px;
+	display: block;
+	overflow: hidden;
+}
+.text-centered{
+	text-align: center;
+}
+span.pull-right{
+	font-size: 85%;
+	float: right!important;
+	color: #777;
+}
+span.time{
+		font-size: 85%;
+	color: #777;
+}
+i{
+	cursor: pointer;
+}
+.menuicon i:hover{
+	color: #0174DF;
+}
+textarea#newpost{
+    resize: none; 
+    border-style: none;
+    border-color: Transparent;
+   	resize: none;
+   	max-height: 400px;
+    outline: none;
+    box-shadow:none;
+}
+textarea#newpost:focus, textarea#comment:focus{
+	outline: none;
+	outline-style:none;
+	box-shadow:none;
+	border-color:transparent;
+}
+.forms{
+	padding: 0px;
+	margin:0;
+	float: left
+}
+.input-groups{
+	float: left;
+}
+
+textarea{
+	resize: none;
+   	max-height: 400px;
+}
+form{
+	margin-bottom: 0px !important;
+}
+div.editbuttons{
+	height: 30px;
+}
+div.editbuttons .btn{
+	height: 25px;
+	line-height: 10px;
+	border-radius: 0px;
+}

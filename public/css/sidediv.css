@@ -1,0 +1,62 @@
+div.side{
+	
+	height: 100%;
+	background: white;
+	border-left: 1px solid #BDBDBD;
+	position: fixed;
+	width: 450px;
+	top:0px;
+	right: 0px;
+	padding-top: 52px;
+}
+div.side .profile{
+	padding: 10px;
+}
+div.side .profile div.head{
+	width: 100%;
+}
+div.side .profile div.head hr{
+	margin-bottom: 5px;
+}
+div.side .profile div.head div.name{
+	text-align: center;
+	width: 100%;
+}
+div.side .profile div.head div.name h2{
+	color: gray;
+	margin-bottom: 5px;
+}
+div.side .profile div.head div.profileinfo{
+	height: 240px;
+}
+div.side .profile div.head div.profileinfo div.avatar{
+	float: left;
+	margin: 0;
+	width: 40%;
+	padding-top: 3px;
+}
+div.side .profile div.head div.profileinfo div.avatar button{
+	width: 100%;
+	margin-top: 5px;
+}
+div.side .profile div.head div.profileinfo div.info{
+	float: left;
+	padding-left: 10px;
+	width: 60%;
+	margin: 0;
+}
+div.side .profile div.head div.profileinfo div.info table{
+	margin-bottom: 0px;
+}
+div.side .profile div.head div.profileinfo div.info table tr td{
+	padding: 6px;
+}
+div.side .profile div.head div.profileinfo div.info table tr td input{
+	width: 150px;
+	padding: 0px;
+	padding-left: 5px;
+}
+div.side .profile div.head div.options button.btn{
+	width: 45% !important;
+	margin: 2% !important;
+}
