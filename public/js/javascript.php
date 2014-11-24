@@ -16,7 +16,9 @@
                         "kiss":{"title":"Kiss","codes":[":*",":=*",":-*"]},
                         "tongue-out":{"title":"Tongue Out","codes":[":P",":=P",":-P",":p",":=p",":-p"]},
                         "blush":{"title":"Blush","codes":["(blush)",":$",":-$",":=$",":\">"]},
-                        "wondering":{"title":"Wondering","codes":[":^)"]}
+                        "wondering":{"title":"Wondering","codes":[":^)"]},
+                        "heart":{"title":"heart","codes":["<3"]},
+                        "party":{"heart":"party","codes":["<:o)"]}
                       };
     $.emoticons.define(definition);
 

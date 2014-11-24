@@ -97,32 +97,32 @@ class UserModel
        
         // Check if file already exists
         if (file_exists($target_file)) {
-            return "Sorry, file already exists.";
+           // return "Sorry, file already exists.";
             $uploadOk = 0;
         }
         // Check file size
         if ($avatar["bestand"]["size"] > 3000000) {
-            return "Sorry, your file is too large.";
+            //return "Sorry, your file is too large.";
             $uploadOk = 0;
         }
         // Allow certain file formats
         if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg"
         && $imageFileType != "gif" ) {
-            return "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
+           // return "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
             $uploadOk = 0;
         }
         // Check if $uploadOk is set to 0 by an error
         if ($uploadOk == 0) {
-            return "Sorry, your file was not uploaded.";
+            //return "Sorry, your file was not uploaded.";
         // if everything is ok, try to upload file
         } else {
             if (move_uploaded_file($avatar["bestand"]["tmp_name"], $target_file)) {
                 $sql = "UPDATE gebruiker SET avatar = '".$newfilename."' WHERE id = ".$user; 
                 $query = $this->db->prepare($sql);              
                 $query->execute();
-                return "The file ".$newfilename. " has been uploaded.";
+              //  return "The file ".$newfilename. " has been uploaded.";
             } else {
-                return "Sorry, there was an error uploading your file.";
+               // return "Sorry, there was an error uploading your file.";
             }
         }
         $sql = "UPDATE persoon SET adres = '".$adres."', woonplaats = '".$city."', postcode = '".$zipcode."', telefoon = '".$tel."', mobiel = '".$mobile."' WHERE persoon.id = ".$person_id->person_id; 
