@@ -142,18 +142,22 @@ class PostModel
         }
     }
     public function editContent($id,$type,$content){
-        $sql = "UPDATE ".$type." SET content = '".$content."' WHERE id = ".$id;
-        $query = $this->db->prepare($sql);
-        $query->execute();
-    }
-    public function delete($id,$type){
-        $sql = "UPDATE ".$type." SET status = 1 WHERE id = ".$id;
-        $query = $this->db->prepare($sql);
-        $query->execute();
-        if ($type == 'comments') {
-            $sql = "UPDATE ".$type." SET status = 1 WHERE parent_id = ".$id;
+        if(CheckOwn($type,$id) || $_SESSION['admin'] == 1){
+            $sql = "UPDATE ".$type." SET content = '".$content."' WHERE id = ".$id;
             $query = $this->db->prepare($sql);
             $query->execute();
+        }
+    }
+    public function delete($id,$type){
+        if(CheckOwn($type,$id) || $_SESSION['admin'] == 1){
+            $sql = "UPDATE ".$type." SET status = 1 WHERE id = ".$id;
+            $query = $this->db->prepare($sql);
+            $query->execute();
+            if ($type == 'comments') {
+                $sql = "UPDATE ".$type." SET status = 1 WHERE parent_id = ".$id;
+                $query = $this->db->prepare($sql);
+                $query->execute();
+            }
         }
     }
     public function getLike($post_id,$user_id,$post_type,$parent_id,$type_like){
@@ -231,4 +235,15 @@ class PostModel
             header("location: " . URL . "home/logout");
         }        
     }
+    private function CheckOwn($table,$id){
+        $sql = "SELECT * FROM $table WHERE id = ".$id; 
+        $query = $this->db->prepare($sql); 
+        $query-> execute();
+        if($query->rowCount() > 0){          
+            $error = false;         
+        } else {           
+            $error = true;   
+        }
+        return $error;
+    }   
 }
