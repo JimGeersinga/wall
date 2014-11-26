@@ -122,7 +122,7 @@
         var like = 'fa-thumbs-o-up';
       }
       if (result.person_id == <?php echo $_SESSION['login_id']; ?> || <?php echo $_SESSION['admin'];  ?> == 1) {
-        var  deletepost = '<i class="fa editpost fa-fw  fa-pencil-square-o" onclick="editcontent('+result.id+', \'post\')"></i><i class="fa deletepost fa-fw fa-times" onclick="deletepost('+result.id+',\'post\',0)"></i>';                      
+        var  deletepost = '<i class="fa editpost fa-fw  fa-pencil-square-o" onclick="editcontent('+result.id+', \'post\','+result.person_id+')"></i><i class="fa deletepost fa-fw fa-times" onclick="deletepost('+result.id+',\'post\',0)"></i>';                      
       }else{
         var  deletepost = '';
       }
@@ -297,7 +297,7 @@ function addComment(element,postid,parent){
     $(element).parent().remove();
     open = 0;
   }
-  function saveContent(element,id,type){
+  function saveContent(element,id,type,user){
     var type = ''+type+'';
     var content = $(".text"+type+id).val();
     $(element).parent().parent().find(".text"+type+id).replaceWith("<span class='content"+type+id+"'>"+$.emoticons.replace(content)+"</span>");
@@ -306,7 +306,7 @@ function addComment(element,postid,parent){
     $.feyenoord({
       url:"<?php echo URL; ?>post/editContent",
       type : 'POST',
-      data: {id: id, type: type, content : content}
+      data: {id: id, type: type, content : content, user : user}
     });
   }
   function deletepost(id,type){

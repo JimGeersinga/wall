@@ -44,8 +44,10 @@ if (isset($_SESSION['login_id']))
         }
         
         public function editContent(){
-            $post_model = $this->loadModel('postmodel');
-            $post_model->editContent($_POST['id'],$_POST['type'],$_POST['content']);
+            if($_SESSION['login_id'] == $_POST['user'] || $_SESSION['admin'] == 1){
+                $post_model = $this->loadModel('postmodel');
+                $post_model->editContent($_POST['id'],$_POST['type'],$_POST['content'],$_POST['user']);
+            }
         }
     }
 }

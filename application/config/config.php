@@ -18,7 +18,7 @@ date_default_timezone_set("UTC");
  * Configuration for: Project URL
  * Put your URL here, for local development "127.0.0.1" or "localhost" (plus sub-folder) is fine
  */
-define('URL', 'http://localhost/wall/');
+define('URL', 'http://localhost/projects/wall/');
 define('MAX_COMMENTS', 2);
 
 $_SESSION['url'] = URL;
